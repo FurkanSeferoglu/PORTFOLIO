@@ -1,0 +1,282 @@
+body {
+    padding: 0;
+    font-size: 100%;
+    line-height: 1.5;
+    font-family: 'Montserrat',sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+    margin-top: 1em;
+    padding-top: 1em;
+    line-height: 1.25;
+    color: rgb(119, 113, 113);
+}
+
+li {
+    list-style-type: none;
+}
+
+.social-icon {
+    position: fixed;
+    margin-top: 2rem;
+}
+
+.main {
+    margin-top: 30px;
+}
+
+.social-icon a {
+    color: rgba(40,33,98, 0.8);
+    margin: 5px;
+}
+
+nav {
+    width: 103%;
+    background-color: rgba(12,12,49, 0.8);
+    color: rgb(145, 136, 136);
+    height: 30px;
+    position: fixed;
+    z-index: 9999;
+    
+}
+
+nav a {
+    color: rgb(119, 113, 113);
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+}
+
+.foto-1 {
+    border: 5px solid;
+    height: 20rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.foto-2 {
+    border: 5px solid;
+    margin-top: 1rem;
+    height: 20rem;
+    border-radius: 5px;
+}
+
+.skills {
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.skills-title {
+    margin-bottom: 2rem;
+}
+
+.skills-icon li {
+    display: inline-block;
+}
+
+#icons {
+    letter-spacing: 5rem;
+}
+
+.nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-left: auto;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 13px;
+    margin-top: -11px;
+}
+
+#up-btn {
+    position: fixed;
+    right: 8px;
+    bottom: 13px;
+    cursor: pointer;
+    color: rgb(119, 113, 113);      
+}
+
+#up-btn:hover {
+    color: rgba(40,33,98, 0.8);
+    transition: 1s;
+}
+
+.social-icon ul li a i {
+    margin: 1rem;
+}
+
+.social-icon a:hover {
+    color: rgb(119, 113, 113);
+    transition: 1s;
+}
+
+.baslik-container {
+    background: #100c31;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.baslik  {
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin: 0 auto;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.about {
+    margin: 0 auto;
+    max-width: 960px;
+    min-height: 100vh;
+}
+
+.baslik h1 {
+    font-size: 2.5rem;
+}
+
+.baslik p {
+    color: rgb(119, 113, 113);
+}
+
+.about-container {
+
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.person-details {
+    text-align: center;
+}
+
+.down {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.down .icon:hover {
+    color: rgba(40,33,98, 0.8);
+    transition: 1s;
+}
+
+.down .icon {
+    position: absolute;
+    transform-style: preserve-3d;
+    left: 50%;
+    color: rgb(119, 113, 113);
+}
+
+.up-baslik {
+    font-size: 100px;
+    display: table-caption;
+    line-height: 1;
+    color: rgb(119, 113, 113);
+}
+
+.up-aciklama {
+    font-size: 50px;
+    display: block;
+    line-height: 2;
+    color: rgb(119, 113, 113);
+    
+}
+
+.projects {
+    margin: 0 auto;
+    max-width: 960px;
+    min-height: 100vh;
+}
+
+.person-project {
+    text-align: center;
+}
+
+footer {
+    background: #100c31;
+    margin-top: 100px;
+    text-align: center;
+    color: rgb(119, 113, 113);
+}
+
+.nav ul li a {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .nav ul li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(119, 113, 113);
+    transition: transform 0.25s ease-out;
+  }
+  
+  .nav ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .dark-mode-toggle {
+    float: right;
+    display: flex;
+    height: 100%;
+    margin-right: 2rem;
+  }
+
+  #dark-mode-button {
+    background-color: transparent;
+    border: none;
+    color: rgb(119, 113, 113);
+    cursor: pointer;
+    font-size: 12px;
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  body.dark-mode #dark-mode-button {
+    color: white;
+  }
+
+  body {
+    background-color: white;
+    color: black;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.mail {
+    
+    padding-left: 50px;
+    font-weight: 500;
+    
+}
+
